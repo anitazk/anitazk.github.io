@@ -1,0 +1,26 @@
+html, body {
+    font-family: $font_family;
+    font-size: 16px;
+    background-color: $text_dark_color;
+    min-height: 1800vh;
+}
+
+a {
+    color: $primary_color;
+    text-decoration: none;
+    &:not(.logo-link):hover {
+        color: $secondary_color;
+        text-decoration: underline ;
+        text-decoration-color: $secondary_color;
+        transition: 0.2s ease-in-out;
+       
+       
+        
+        
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
