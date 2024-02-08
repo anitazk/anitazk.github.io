@@ -1,15 +1,32 @@
 header {
-    position: sticky;
-    top: 0;
-    background-color: $text_dark_color;
+  position: sticky;
+  top: 0;
+  background-color: $text_dark_color;
 }
 
 li {
-    padding-left: 1.8rem;
-    padding-top: 1rem;
+  padding-left: 1.8rem;
+  padding-top: 1rem;
 }
 
 .home {
-    color: $secondary_color;
+  color: $secondary_color;
+}
 
+.footer {
+  background: #421b9b;
+}
+
+.container-div {
+  display: flex;
+}
+.div-row {
+  max-width: 25%;
+  height: 80px;
+  border: 1px solid;
+}
+.Copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
