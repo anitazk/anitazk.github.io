@@ -8,15 +8,11 @@ html, body {
 a {
     color: $primary_color;
     text-decoration: none;
-    &:not(.logo-link):hover {
+    &:not(.logo-link, .button, .button-2):hover {
         color: $secondary_color;
         text-decoration: underline ;
         text-decoration-color: $secondary_color;
         transition: 0.2s ease-in-out;
-       
-       
-        
-        
     }
 }
 
@@ -24,3 +20,6 @@ li {
     list-style-type: none;
 }
 
+h3 {
+    color: $primary_color;
+}

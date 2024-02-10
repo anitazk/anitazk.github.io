@@ -1,7 +1,9 @@
+// header
 header {
   position: sticky;
   top: 0;
   background-color: $text_dark_color;
+
 }
 
 li {
@@ -12,9 +14,116 @@ li {
 .home {
   color: $secondary_color;
 }
+// main_section-1
+.hello {
+  color: $secondary_color;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
 
+h1 {
+  font-size: 60px;
+  color: $primary_color;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-top: $spacer * 2.5;
+}
+
+.div-sec-1 {
+  margin: $spacer * 5;
+  margin-top: $spacer * 16.5;
+
+}
+
+
+
+h2 {
+  margin-top: $spacer;
+  margin-right: $spacer * 8.5;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  color: $primary_color;
+  margin-top: $spacer * 3.5;
+}
+
+span {
+  color: $secondary_color;
+}
+
+.button {
+  @include primary_buttun;
+  margin-top: $spacer * 3.5;
+
+
+}
+
+.button-2 {
+  @include primary_buttun_2;
+  margin-top: $spacer * 3.5;
+
+}
+
+.img-1 {
+  padding-top: $spacer * 10;
+  & img {
+    background-size: contain;
+    border-radius: $spacer;
+    opacity: 57%;
+    height: 85%;
+}
+
+  }
+ // main_section-2
+
+ .img-2 {
+  & img {
+    background-size: contain;
+    border-radius: $spacer;
+    height: 80%;
+}
+
+ }
+
+// footer
 .Copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+footer {
+  width: 100%;
+}
+.div-container {
+  width: 100%;
+}
+
+.about {
+  align-items: center;
+  justify-content: center;
+  color: $primary_color;
+  padding-left: $spacer * 6;
+  width: 25%;
+  // border: 1px solid;
+
+  & p {
+    display: block;
+    text-align: justify;
+    color: $footer_li;
+  }
+}
+
+.Links {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  padding-left: $spacer * 6;
+  // border: 1px solid;
+  & h3 {
+    padding-left: $spacer * 4;
+  }
+
 }

@@ -1,0 +1,30 @@
+@mixin primary_buttun($radius: 40px) {
+    color: $text_dark_color;
+    background-color: $secondary_color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacer * 2 $spacer * 3;
+    border-radius: $radius;
+    border: 1px solid none;
+    font-size: $spacer * 1.5;
+    letter-spacing: 2px;
+    font-weight:600;
+
+}
+
+@mixin primary_buttun_2($radius: 40px) {
+    color: white;
+    background-color: $text_dark_color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacer * 2 $spacer * 3;
+    border-radius: $radius;
+    border: 1px solid $primary_color ;
+    font-size: $spacer * 1.5;
+    letter-spacing: 2px;
+    font-weight:600;
+
+}
+
