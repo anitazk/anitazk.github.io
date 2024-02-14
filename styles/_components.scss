@@ -3,7 +3,7 @@ header {
   position: sticky;
   top: 0;
   background-color: $text_dark_color;
-
+  z-index: 100;
 }
 
 li {
@@ -33,10 +33,7 @@ h1 {
 .div-sec-1 {
   margin: $spacer * 5;
   margin-top: $spacer * 16.5;
-
 }
-
-
 
 h2 {
   margin-top: $spacer;
@@ -57,42 +54,138 @@ span {
 .button {
   @include primary_buttun;
   margin-top: $spacer * 3.5;
-
-
 }
 
 .button-2 {
   @include primary_buttun_2;
   margin-top: $spacer * 3.5;
-
 }
 
 .img-1 {
   padding-top: $spacer * 10;
+  padding-left: $spacer * 22.5;
   & img {
     background-size: contain;
     border-radius: $spacer;
     opacity: 57%;
     height: 85%;
-}
-
   }
- // main_section-2
+}
+// main_section-2
 
- .img-2 {
+.img-2 {
   & img {
     background-size: contain;
     border-radius: $spacer;
     height: 80%;
+    width: 20;
+    opacity: 63%;
+  }
 }
 
- }
+.about-big {
+  // z-index: -1;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 90px;
+  margin-bottom: 57px;
+}
+.about-small {
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 7px;
+  margin-bottom: -50px;
+}
+
+.about-p {
+  color: $text_main_color;
+  text-align: start;
+}
+
+.li-span-right {
+  color: $primary_color;
+  font-weight: 600;
+  width: 130px;
+  margin-right: 12px;
+}
+
+.li-span-left {
+  color: $text_main_color;
+  // text-align: justify;
+  // align-items: start;
+  width: calc(100% - 130px);
+}
+
+// section-3
+.title-resume-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.title-resume-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.Resume-p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: $text_main_color;
+  max-width: 0.8wv;
+  background-color: aqua;
+}
+
+.span-project {
+  color: $primary_color !important;
+}
+
+// section6
+
+.img-blog {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 350px;
+  opacity: 1;
+}
+.Blog-h3 {
+  text-align: center;
+}
+
+.p-blog-title {
+  color: $text_main_color;
+  text-align: center;
+  margin-top: -68px;
+}
+
+.p-blog {
+  color: $primary_color;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.p-blog-2 {
+  color: $text_main_color;
+}
+
+figure > img:hover {
+  transition: all 0.4s ease-out 0s;
+  transform: scale(1.05);
+}
 
 // footer
 .Copyright {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: $spacer * 7;
 }
 footer {
   width: 100%;
@@ -107,12 +200,12 @@ footer {
   color: $primary_color;
   padding-left: $spacer * 6;
   width: 25%;
-  // border: 1px solid;
 
   & p {
     display: block;
     text-align: justify;
     color: $footer_li;
+    line-height: 1.7;
   }
 }
 
@@ -122,8 +215,49 @@ footer {
   align-items: center;
   padding-left: $spacer * 6;
   // border: 1px solid;
-  & h3 {
+  & h4 {
     padding-left: $spacer * 4;
   }
+}
 
+.div-footer {
+  justify-content: space-between;
+  & h4 {
+    padding-bottom: $spacer * 5;
+  }
+}
+
+.div-icon > a {
+  padding: 0 $spacer;
+  padding-bottom: $spacer * 2;
+  font-size: larger;
+}
+
+.div-icon-footer-2 {
+  line-height: 2.5;
+  & a {
+    padding-left: 50px;
+  }
+  & p {
+    & a,
+    .address {
+      padding-left: 20px;
+    }
+  }
+}
+
+.address {
+  padding-left: 25px;
+}
+
+.Questions {
+  margin-left: 50px;
+  & h4 {
+    // padding-right: 20px;
+  }
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
 }

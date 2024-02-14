@@ -1,25 +1,28 @@
-html, body {
-    font-family: $font_family;
-    font-size: 16px;
-    background-color: $text_dark_color;
-    min-height: 1800vh;
+html,
+body {
+  font-family: $font_family;
+  font-size: 16px;
+  background-color: $text_dark_color;
+  min-height: 900vh;
 }
 
 a {
-    color: $primary_color;
-    text-decoration: none;
-    &:not(.logo-link, .button, .button-2):hover {
-        color: $secondary_color;
-        text-decoration: underline ;
-        text-decoration-color: $secondary_color;
-        transition: 0.2s ease-in-out;
-    }
+  color: $primary_color;
+  text-decoration: none;
+  &:not(.logo-link, .button, .button-2):hover {
+    color: $secondary_color;
+    text-decoration: underline;
+    text-decoration-color: $secondary_color;
+    transition: 0.2s ease-in-out;
+  }
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+h4,
 h3 {
-    color: $primary_color;
+  color: $primary_color;
 }
+
