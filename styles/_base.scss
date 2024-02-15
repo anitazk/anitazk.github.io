@@ -3,7 +3,7 @@ body {
   font-family: $font_family;
   font-size: 16px;
   background-color: $text_dark_color;
-  min-height: 900vh;
+  max-height: 900vh;
 }
 
 a {

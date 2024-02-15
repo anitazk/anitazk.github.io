@@ -303,10 +303,9 @@ figure > img:hover {
   min-width: 500px ;
   padding: 100px 0  ;
   background-image: url(../assets/4.jpg); 
-  background-position: center top;
+  background-position: center center;
   position: relative;
-  background-attachment: fixed;
-  
+  background-size: cover;  
 }
 
 // footer
